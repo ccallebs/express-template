@@ -1,0 +1,20 @@
+{
+  "name": "Express Template",
+  "description": "Express Application Template",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "jade": "*",
+    "body-parser": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "express-flash": "*",
+    "cookie-parser": "*",
+    "express-session": "*",
+    "coffee-script": "*",
+    "coffee-middleware": "*",
+    "stylus": "*"
+  }
+}

@@ -1,0 +1,26 @@
+doctype html
+
+html(lang="en")
+  head
+    title Express Application
+    script(type='text/javascript' src='/components/requirejs/require.js')
+    script(type='text/javascript' src='/requirejs.config.js')
+    link(rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+    link(rel='stylesheet' href='/stylesheets/site.css')
+    block requirejs
+  body
+    #container
+      #navigation.navbar(role='navigation')
+        .container-fluid
+          .navbar-header
+            .navbar-brand Express Application
+      .container-fluid
+        if messages.error
+          span
+            = messages.error
+
+        if messages.success
+          span
+            = messages.success
+
+        block content
